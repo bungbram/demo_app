@@ -1,5 +1,8 @@
 DemoApp::Application.routes.draw do
-  resources :users
+  # resources :users
+  
+  about_path -> '/users'
+  about_url  -> 'http://localhost:3000/users'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
